@@ -1,9 +1,5 @@
 FROM alpine:3.12
 
-LABEL maintainer="Daniel Lindgren" \
-      name="broadlink-test" \
-	  version="1.0.0"
-
 RUN mkdir -p /app
 WORKDIR /app
 
