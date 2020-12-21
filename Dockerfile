@@ -1,6 +1,7 @@
 FROM alpine:3.12
 
 RUN mkdir -p /app
+
 WORKDIR /app
 
 COPY config.sample.js /app/config.js
