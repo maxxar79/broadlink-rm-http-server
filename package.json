@@ -1,0 +1,18 @@
+{
+  "name": "broadlink-rm-http-server",
+  "version": "1.0.0",
+  "description": "Broadlink HTTP API",
+  "repository": "https://github.com/maxxar79/broadlink-rm-http-server",
+  "author": "Daniel Lindgren <dlindgren@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxxar79/broadlink-rm-http-server/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "broadlink-rm-http": "*"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
