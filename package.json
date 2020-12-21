@@ -1,7 +1,7 @@
 {
   "name": "broadlink-rm-http-server",
   "version": "1.0.0",
-  "description": "Broadlink HTTP API",
+  "description": "Broadlink HTTP API Server",
   "repository": "https://github.com/maxxar79/broadlink-rm-http-server",
   "author": "Daniel Lindgren <dlindgren@gmail.com>",
   "license": "ISC",
