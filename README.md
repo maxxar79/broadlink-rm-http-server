@@ -1,32 +1,32 @@
 # Docker Broadlink RM http server
 
-Small 63Mb docker container that trigger IR commands from Broadlink RM device with http
+Small 50-65Mb docker container that trigger IR commands from Broadlink RM device with http
 
-This image will run on ARM64 and Intel, tested with Raspberry Pi 4
+This image will run on both 32-bit (armv7l) and 64-bit (aarch64) Raspberry Pi and Intel plattform
 
 
 ## Usage
 
 ```python
 
-Create volume
+Run container for test
+
+docker run \
+  --name broadlink-rm-http-server
+  -p 1880:1880 \
+  -e TZ=<timezone> \
+  --network="host" \
+  maxxar79/broadlink-rm-http-server:latest
+
+-------------------------
+
+Recommended way create volume example
 
  docker volume create --driver local \
       --opt type=none \
       --opt device=/home/ubuntu/docker/broadlink \
       --opt o=bind \
       broadlink
-
--------------------------
-
-Run container
-
-docker run \
-  -p 1880:1880 \
-  -e TZ=<timezone> \
-  -v broadlink:/app \
-  network_mode:host \
-  maxxar79/broadlink-rm-http-server:latest
 
 ------------------------
 
